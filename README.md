@@ -15,4 +15,5 @@
 4. Поддерживает простые запросы финансового анализа
 
 ### Исходные данные 
-В файле financial_data.csv
+В файле [financial_data.csv
+](https://github.com/HR-amocrm/Test-for-Junior-AI-engineer/blob/b99d291b6385e127ac5009e2994cfd1919456ad3/financial_data.csv)
