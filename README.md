@@ -1,1 +1,2 @@
-# -Junior-AI-Engineer
+# Тестовое задание на позицию Junior AI-engineer
+
