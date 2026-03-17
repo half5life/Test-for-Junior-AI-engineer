@@ -63,7 +63,7 @@ if st.session_state.df is not None:
     if st.session_state.agent is None:
         try:
             # Используем модель по умолчанию, заданную в .env или fallback
-            model_name = os.getenv("OPENROUTER_MODEL", "openai/gpt-3.5-turbo")
+            model_name = os.getenv("OPENROUTER_MODEL", "minimax/minimax-m2.5:free")
             st.session_state.agent = get_ai_agent(st.session_state.df, model_name=model_name)
         except Exception as e:
             st.error(f"Ошибка при инициализации AI-агента: {e}")
