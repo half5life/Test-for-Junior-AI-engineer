@@ -17,7 +17,7 @@ def get_ai_agent(df: pd.DataFrame, model_name: str = None):
     base_url = "https://openrouter.ai/api/v1"
     
     if not model_name:
-        model_name = os.getenv("OPENROUTER_MODEL", "openai/gpt-3.5-turbo")
+        model_name = os.getenv("OPENROUTER_MODEL", "stepfun/step-3.5-flash:free")
     
     if not api_key:
         raise ValueError("OPENROUTER_API_KEY не найден в переменных окружения.")
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     
     try:
         data = load_and_process_data("financial_data.csv")
-        ai_analyst = get_ai_agent(data, "minimax/minimax-m2.5:free")
+        ai_analyst = get_ai_agent(data, "stepfun/step-3.5-flash:free")
         
         # Пример простого запроса
         test_query = "В каком году был самый быстрый рост выручки?"

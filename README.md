@@ -31,7 +31,7 @@
 4. Создайте файл `.env` в корневой директории проекта и добавьте ваш API ключ OpenRouter:
    ```env
    OPENROUTER_API_KEY=ваш_api_ключ_здесь
-   OPENROUTER_MODEL=openai/gpt-3.5-turbo  # или другая модель по желанию
+   OPENROUTER_MODEL=stepfun/step-3.5-flash:free  # или другая модель по желанию
    ```
 
 ### 3. Запуск
